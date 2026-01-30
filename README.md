@@ -31,7 +31,7 @@ end
 Connect to MariaDB running in Docker container from laptop (enter password from docker-compose.yml when prompted):
 
 ```
-mysql --host=127.0.0.1 --user=root --port=3307 --password maria_development
+docker compose exec db mariadb -u root -p maria_development
 mysql> select * from users;
 +----+----------+---------------------+----------------------------+----------------------------+
 | id | username | fav_fruits          | created_at                 | updated_at                 |
