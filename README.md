@@ -14,7 +14,6 @@ Create and migrate database in another terminal:
 
 ```
 bin/rails db:create
-bin/rails generate model user username:string fav_fruits:json
 bin/rails db:migrate
 ```
 
